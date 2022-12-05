@@ -3,5 +3,9 @@
 import { worker } from "@/mocks/browser"
 
 export default defineNuxtPlugin(async () => {
-  await worker.start() // setupでfetchするにはawaitが必要
+  const config = useRuntimeConfig()
+  // 環境変数 NUXT_PUBLIC_MSW が設定されている場合有効化
+  if (config.msw) {
+    await worker.start() // setupでfetchするにはawaitが必要
+  }
 })
