@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "spadin.config-defaults",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "vue.volar"
+  ]
+}
