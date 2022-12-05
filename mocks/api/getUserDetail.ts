@@ -1,3 +1,5 @@
+// ダミーのレスポンスを定義(ユーザー詳細)
+
 import { ResponseResolver, restContext, RestRequest } from "msw"
 
 import { UserDetail } from "@/assets/models/UserDetail"
