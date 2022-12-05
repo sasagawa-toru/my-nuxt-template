@@ -7,4 +7,12 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  ssr: false,
+  nitro: {
+    devProxy: {
+      "/api": {
+        target: "http://localhost:8000/api",
+      },
+    },
+  },
 })
